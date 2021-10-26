@@ -26,7 +26,18 @@ header, footer {
 
 }
 header {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
+}
+.title {
+    margin-right: auto;
+}
+.header-right {
+    display: flex;
+    gap: 10px;
+    height: 40px;
+    margin-top: auto;
 }
 
 footer {
@@ -66,9 +77,15 @@ footer {
 
 .card {
     display: flex;
-    height: 250px;
+    flex-direction: row;
+    gap: 6px;
+    padding: 10px;
+    height: 180px;
     width: 250px;
-    background-color: blue;
+    background-color:rgb(182, 133, 93);
+    border-radius: 8px;
+    border-style: solid;
+    border-color:  rgb(157, 85, 26);
 }
 
 .test {
@@ -79,7 +96,7 @@ footer {
     justify-content: space-between;
     padding: 20px;
     gap: 10px;
-    
+
     /* To get scrollable window... */
     position: absolute;
     top: 0;
@@ -87,4 +104,40 @@ footer {
     right: 0;
     bottom: 0;
     overflow: auto;
+}
+
+
+
+
+.card-info {
+    flex: 1 0 auto;;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px;
+
+}
+
+.status-indicator {
+    flex: 0 0 auto;
+    margin-bottom: auto;
+    background-color: green;
+    border-radius: 50%;
+    height: 50px; 
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-title {
+    font-size: 20px;
+    font-weight: 1000;
+}
+.status, .pages, .start-date {
+    font-weight: 1;
+    font-size: 16px;
+
 }
