@@ -1,0 +1,90 @@
+*   {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: ivory;
+}
+html {
+    height: 100%;
+}
+body {
+    margin: 0px;
+    background-color: rgb(221, 164, 117);
+    height: 100%;
+}
+
+.allButFooter {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+    
+}
+
+#title {
+    font-size: 60px;
+}
+
+header, footer {
+    background-color:rgb(177, 113, 60);
+
+}
+header {
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    height: 40px;
+    margin-top: auto;
+    align-items: center;
+    justify-content: center;
+    color: ivory;
+}
+
+.bookshelf-container {
+    flex: 1;
+    display: flex;
+    /* height: 100vh; */
+    padding-bottom: auto;
+}
+
+
+.controls-container {
+    flex: 0 0 auto;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(157, 85, 26);
+    min-height: min-content;
+    
+}
+
+.bookcards-container {
+    position: relative;
+    flex: 1 1 auto;
+
+}
+
+.card {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+}
+
+.test {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+    
+    /* To get scrollable window... */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
